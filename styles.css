@@ -920,6 +920,10 @@ body {
   /* ── OVERFLOW GLOBAL — evita scroll horizontal ── */
   html, body { overflow-x: hidden; }
 
+  /* ── NAV ── */
+  .nav__item { font-size: 14px; padding: 9px 16px; }
+  .nav__pill { padding: 4px; gap: 2px; }
+
   /* ── HERO ── */
   .hero { padding: 100px 24px 60px; }
 
