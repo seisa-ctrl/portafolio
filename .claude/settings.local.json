@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat \"C:\\\\Users\\\\AMD\\\\.claude\\\\settings.json\" 2>/dev/null || echo \"NO_EXISTS\")",
+      "WebFetch(domain:api.figma.com)",
+      "PowerShell(ffmpeg -version 2>&1)",
+      "WebFetch(domain:skiper-ui.com)",
+      "Bash(ls \"C:\\\\Users\\\\AMD\\\\Desktop\\\\port\\\\\" && ls \"C:\\\\Users\\\\AMD\\\\Desktop\\\\port\\\\certificados\\\\\" 2>/dev/null || echo \"no certificados folder\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(cp \"C:/Users/AMD/Desktop/port2/nami/animacion-nami.mp4\" \"C:/Users/AMD/Desktop/port/proyectos/nami/\")",
+      "Bash(cp \"C:/Users/AMD/Desktop/port2/nami/portada.jpg\" \"C:/Users/AMD/Desktop/port/proyectos/nami/\")",
+      "Bash(cp \"C:/Users/AMD/Desktop/port2/Toyota tgr/portada.jpg\" \"C:/Users/AMD/Desktop/port/proyectos/toyota-tgr/\")",
+      "Bash(cp \"C:/Users/AMD/Desktop/port2/Toyota tgr/tgr-animacion.mp4\" \"C:/Users/AMD/Desktop/port/proyectos/toyota-tgr/\")",
+      "Bash(cp \"C:/Users/AMD/Desktop/port2/cimonamia/portada.jpg\" \"C:/Users/AMD/Desktop/port/proyectos/cimonamia/\")",
+      "Bash(cp \"C:/Users/AMD/Desktop/port2/cimonamia/Cimonamia.mp4\" \"C:/Users/AMD/Desktop/port/proyectos/cimonamia/\")",
+      "Bash(cp \"C:/Users/AMD/Desktop/port2/Versor/portada.jpg\" \"C:/Users/AMD/Desktop/port/proyectos/versor/\")",
+      "Bash(cp \"C:/Users/AMD/Desktop/port2/Versor/versor 2.mp4\" \"C:/Users/AMD/Desktop/port/proyectos/versor/versor.mp4\")",
+      "Bash(cp \"C:/Users/AMD/Desktop/port2/app desing/Toyota.jpg\" \"C:/Users/AMD/Desktop/port/app-design/\")",
+      "Bash(cp \"C:/Users/AMD/Desktop/port2/app desing/Consul.jpg\" \"C:/Users/AMD/Desktop/port/app-design/\")",
+      "Bash(cp \"C:/Users/AMD/Desktop/port2/app desing/Arboleda-virtual.jpg\" \"C:/Users/AMD/Desktop/port/app-design/\")",
+      "Bash(mkdir -p \"C:\\\\Users\\\\AMD\\\\Desktop\\\\port\\\\playground\" && cp \"C:\\\\Users\\\\AMD\\\\Desktop\\\\port2\\\\playground/\"* \"C:\\\\Users\\\\AMD\\\\Desktop\\\\port\\\\playground/\" && ls \"C:\\\\Users\\\\AMD\\\\Desktop\\\\port\\\\playground\")"
+    ]
+  }
+}
