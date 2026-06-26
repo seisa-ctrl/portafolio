@@ -18,63 +18,67 @@
   const MAX = 4;
   let active = [];
 
-  hero.addEventListener('mousemove', e => {
-    const rect = hero.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+  const isMobile = 'ontouchstart' in window || window.matchMedia('(pointer: coarse)').matches || window.innerWidth < 768;
 
-    const dx = x - lastX, dy = y - lastY;
-    if (Math.sqrt(dx * dx + dy * dy) < DISTANCE) return;
-    lastX = x; lastY = y;
+  if (!isMobile) {
+    hero.addEventListener('mousemove', e => {
+      const rect = hero.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
 
-    const img = document.createElement('img');
-    img.src = IMAGES[imgIndex % IMAGES.length];
-    imgIndex++;
+      const dx = x - lastX, dy = y - lastY;
+      if (Math.sqrt(dx * dx + dy * dy) < DISTANCE) return;
+      lastX = x; lastY = y;
 
-    img.className = 'trail-img';
-    const w = 160;
-    const h = 210;
-    img.style.cssText = `
-      position:absolute;
-      left:${x - w / 2}px;
-      top:${y - h / 2}px;
-      width:${w}px;
-      height:${h}px;
-      object-fit:contain;
-      border-radius:0;
-      pointer-events:none;
-      z-index:0;
-      opacity:0;
-      transform:scale(0.85) rotate(${(Math.random() - 0.5) * 14}deg);
-      transition:opacity 0.15s ease, transform 0.15s ease;
-    `;
+      const img = document.createElement('img');
+      img.src = IMAGES[imgIndex % IMAGES.length];
+      imgIndex++;
 
-    hero.appendChild(img);
-    active.push(img);
+      img.className = 'trail-img';
+      const w = 160;
+      const h = 210;
+      img.style.cssText = `
+        position:absolute;
+        left:${x - w / 2}px;
+        top:${y - h / 2}px;
+        width:${w}px;
+        height:${h}px;
+        object-fit:contain;
+        border-radius:0;
+        pointer-events:none;
+        z-index:0;
+        opacity:0;
+        transform:scale(0.85) rotate(${(Math.random() - 0.5) * 14}deg);
+        transition:opacity 0.15s ease, transform 0.15s ease;
+      `;
 
-    requestAnimationFrame(() => {
-      img.style.opacity = '1';
-      img.style.transform = `scale(1) rotate(${(Math.random() - 0.5) * 8}deg)`;
+      hero.appendChild(img);
+      active.push(img);
+
+      requestAnimationFrame(() => {
+        img.style.opacity = '1';
+        img.style.transform = `scale(1) rotate(${(Math.random() - 0.5) * 8}deg)`;
+      });
+
+      if (active.length > MAX) {
+        const old = active.shift();
+        old.style.opacity = '0';
+        old.style.transform = `scale(0.8) rotate(${(Math.random() - 0.5) * 12}deg)`;
+        setTimeout(() => old.remove(), 400);
+      }
     });
 
-    if (active.length > MAX) {
-      const old = active.shift();
-      old.style.opacity = '0';
-      old.style.transform = `scale(0.8) rotate(${(Math.random() - 0.5) * 12}deg)`;
-      setTimeout(() => old.remove(), 400);
-    }
-  });
-
-  hero.addEventListener('mouseleave', () => {
-    active.forEach(img => {
-      img.style.opacity = '0';
-      setTimeout(() => img.remove(), 400);
+    hero.addEventListener('mouseleave', () => {
+      active.forEach(img => {
+        img.style.opacity = '0';
+        setTimeout(() => img.remove(), 400);
+      });
+      active = [];
     });
-    active = [];
-  });
+  }
 
-  // Mobile: aparición aleatoria periódica (sin mouse)
-  if (window.matchMedia('(pointer: coarse)').matches) {
+  // Mobile: figuras aparecen y se desvanecen aleatoriamente
+  if (isMobile) {
     const W = 120, H = 160;
     function spawnMobile() {
       const x = W / 2 + Math.random() * (hero.offsetWidth - W);

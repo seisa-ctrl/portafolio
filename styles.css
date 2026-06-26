@@ -960,6 +960,7 @@ body {
   .playground__cols { flex-wrap: wrap; height: auto; gap: 10px; }
   .playground__col { flex: 0 0 calc(50% - 5px); height: auto; }
   .playground__col img, .playground__col video { flex: 0 0 auto; height: 150px; min-height: 150px; }
+  .playground__col:last-child { display: none; }
 }
 
 /* ── CAROUSEL ACTIVE — CLICK HINT ── */
@@ -1059,7 +1060,7 @@ body {
 }
 
 .proj-left {
-  flex: 0 0 58%;
+  flex: 0 0 66%;
   border-radius: 20px;
   overflow: hidden;
   background: #111;
