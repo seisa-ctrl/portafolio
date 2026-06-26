@@ -952,11 +952,14 @@ body {
   .webdesign__row { padding: 16px 0; }
 
   /* ── PLAYGROUND ── */
-  .playground { padding: 60px 20px; }
-  .playground__header { flex-direction: column; gap: 16px; align-items: flex-start; }
+  .playground { height: auto; overflow: visible; padding: 48px 20px 56px; }
+  .playground__sticky { position: relative; height: auto; padding: 0; gap: 20px; }
+  .playground__header { flex-direction: column; align-items: center; text-align: center; gap: 10px; }
+  .playground__title { font-size: 42px; }
   .playground__desc { max-width: 100%; }
-  .playground__cols { flex-wrap: wrap; }
-  .playground__col { flex: 0 0 calc(33.33% - 10px); }
+  .playground__cols { flex-wrap: wrap; height: auto; gap: 10px; }
+  .playground__col { flex: 0 0 calc(50% - 5px); height: auto; }
+  .playground__col img, .playground__col video { flex: 0 0 auto; height: 150px; min-height: 150px; }
 }
 
 /* ── CAROUSEL ACTIVE — CLICK HINT ── */

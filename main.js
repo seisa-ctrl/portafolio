@@ -72,6 +72,32 @@
     });
     active = [];
   });
+
+  // Mobile: aparición aleatoria periódica (sin mouse)
+  if (window.matchMedia('(pointer: coarse)').matches) {
+    const W = 120, H = 160;
+    function spawnMobile() {
+      const x = W / 2 + Math.random() * (hero.offsetWidth - W);
+      const y = H / 2 + Math.random() * (hero.offsetHeight - H);
+      const img = document.createElement('img');
+      img.src = IMAGES[imgIndex % IMAGES.length];
+      imgIndex++;
+      img.className = 'trail-img';
+      img.style.cssText = `position:absolute;left:${x - W/2}px;top:${y - H/2}px;width:${W}px;height:${H}px;object-fit:contain;border-radius:0;pointer-events:none;z-index:0;opacity:0;transform:scale(0.85) rotate(${(Math.random()-.5)*14}deg);transition:opacity 0.3s ease,transform 0.3s ease;`;
+      hero.appendChild(img);
+      requestAnimationFrame(() => {
+        img.style.opacity = '1';
+        img.style.transform = `scale(1) rotate(${(Math.random()-.5)*8}deg)`;
+      });
+      setTimeout(() => {
+        img.style.opacity = '0';
+        img.style.transform = `scale(0.85) rotate(${(Math.random()-.5)*12}deg)`;
+        setTimeout(() => img.remove(), 350);
+      }, 1400);
+      setTimeout(spawnMobile, 900 + Math.random() * 900);
+    }
+    setTimeout(spawnMobile, 600);
+  }
 })();
 
 // ── DISEÑO WEB — HOVER MODAL ──
