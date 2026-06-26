@@ -485,51 +485,51 @@ window.addEventListener('scroll', () => {
   const PROJECTS = {
     nami: {
       title: 'Nami',
-      category: 'Branding & Identidad Visual',
-      desc: 'Desarrollo de identidad visual completa para Nami. Desde la conceptualización del logo hasta el sistema de marca, paleta de color y tipografía. Un proyecto donde cada decisión tuvo que tener un porqué.',
-      tools: ['Figma', 'Illustrator', 'Photoshop', 'After Effects'],
+      category: 'Diseño Web & UX',
+      desc: 'Diseñé la página web de Nami y propuse distintas soluciones para que sus clientes pudieran pagar sus servicios de forma fácil y sin fricciones. De la arquitectura de la información al flujo de pago, cada paso tenía que tener un porqué.',
+      tools: ['Figma', 'Illustrator', 'Photoshop', 'Gemini', 'Webflow'],
       figma: 'https://embed.figma.com/proto/pRIhvljL5yHQLa7WZOD0sq/Nami?page-id=0%3A1&node-id=1-2&p=f&viewport=557%2C79%2C0.06&scaling=scale-down-width&content-scaling=fixed&embed-host=share'
     },
     'toyota-tgr': {
       title: 'Toyota TGR',
-      category: 'Diseño Digital',
-      desc: 'Pieza audiovisual y de diseño para Toyota Gazoo Racing Colombia. Emoción, velocidad y marca en cada fotograma.',
-      tools: ['Figma', 'After Effects', 'Premiere Pro'],
+      category: 'Rediseño Web',
+      desc: 'Participé en el rediseño general del sitio web de Toyota con foco en la sección de Gazoo Racing. Velocidad, precisión y una identidad visual que le hace justicia a la marca.',
+      tools: ['Figma', 'Photoshop', 'Illustrator'],
       figma: 'https://embed.figma.com/proto/LEDlCAAKGJpCUaArBhj9YW/Toyota?page-id=0%3A1&node-id=1-302&p=f&viewport=703%2C478%2C0.16&scaling=scale-down-width&content-scaling=fixed&embed-host=share'
     },
     cimonamia: {
       title: 'Cimonamía',
-      category: 'Branding & Moda',
-      desc: 'Identidad visual y piezas de comunicación para Cimonamía, una marca de moda que nació para romper esquemas y hablarle a una generación que no se conforma.',
-      tools: ['Figma', 'Illustrator', 'Photoshop'],
+      category: 'Diseño Web & Branding',
+      desc: 'Una página de coming soon que no solo decía "próximamente", sino que ya contaba la historia. Generamos expectativa, presentamos la esencia de la marca y dejamos al usuario con ganas de más.',
+      tools: ['Figma', 'Illustrator', 'Photoshop', 'Webflow', 'Gemini'],
       figma: 'https://embed.figma.com/proto/5i1bbrfyK3eWyx1ixnVL5h/CimonaMia?page-id=0%3A1&node-id=2-3&p=f&viewport=564%2C-2666%2C0.28&scaling=scale-down-width&content-scaling=fixed&embed-host=share'
     },
     versor: {
       title: 'Grupo Versor',
-      category: 'Branding & Tecnología',
-      desc: 'Sistema de identidad visual para Grupo Versor. Una marca que debía comunicar innovación, confianza y modernidad sin perder su esencia humana.',
-      tools: ['Figma', 'Illustrator', 'After Effects'],
+      category: 'Diseño Web',
+      desc: 'Diseñé el home para aterrizar las ideas de producto de Grupo Versor. Lo desarrollé en versión clara y oscura, porque una buena propuesta se tiene que ver bien en cualquier contexto.',
+      tools: ['Figma', 'Magnific', 'After Effects'],
       figma: 'https://embed.figma.com/proto/skesGxS1O8FshZK6Vv5k0H/Grupo-Versor?node-id=1-225&viewport=514%2C193%2C0.36&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&embed-host=share'
     },
     arboleda: {
       title: 'Arboleda Virtual',
-      category: 'Diseño & Desarrollo Web',
-      desc: 'Diseño y desarrollo de experiencia digital para Arboleda Virtual. Una plataforma que conecta personas con espacios verdes desde cualquier lugar del mundo.',
-      tools: ['Figma', 'HTML', 'CSS', 'JavaScript'],
+      category: 'UX & Desarrollo',
+      desc: 'Junto a Sara Gómez diseñamos una propuesta de aplicación para la Escuela de Comunicación de la Universidad Sergio Arboleda. Un proyecto académico que tomamos con la seriedad de uno real.',
+      tools: ['Figma', 'Antigravity', 'HTML', 'CSS'],
       figma: 'https://embed.figma.com/proto/T44I4peOrjZOQSom7R6lRT/-INT--Arboleda-Virtual?node-id=317-929&viewport=484%2C598%2C0.17&scaling=scale-down&content-scaling=fixed&starting-point-node-id=705%3A4680&page-id=317%3A928&embed-host=share'
     },
     'toyota-usados': {
       title: 'Toyota Usados',
-      category: 'Diseño & Desarrollo Web',
-      desc: 'Plataforma digital para la compra y venta de vehículos Toyota usados. Diseño centrado en la confianza, la claridad y la experiencia del usuario en cada paso.',
-      tools: ['Figma', 'HTML', 'CSS', 'WordPress'],
+      category: 'Diseño de Aplicativo',
+      desc: 'Construí un aplicativo para gestionar el inventario de vehículos usados de Toyota, partiendo del programa Genera. Un sistema claro, funcional y pensado para quien lo va a usar día a día.',
+      tools: ['Figma', 'Genera', 'ChatGPT'],
       figma: 'https://embed.figma.com/proto/p7inAxN32OKR3Ky3lkpmpz/Toyota-Usados?node-id=1-3&viewport=403%2C134%2C0.06&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share'
     },
     'consul-virtual': {
       title: 'Consul Virtual',
-      category: 'Diseño & Desarrollo Web',
-      desc: 'Diseño de interfaz y experiencia para Consul Virtual. Una plataforma que simplifica procesos complejos y acerca el servicio al usuario de forma clara e intuitiva.',
-      tools: ['Figma', 'Illustrator', 'HTML', 'CSS'],
+      category: 'UX Research & Diseño',
+      desc: 'Con Angélica Ortega fuimos desde el insight hasta el prototipo. El resultado: una app que simula la entrevista de aprobación de visa, analiza los documentos requeridos, te hace el simulacro y al final te dice exactamente cómo te fue. Un proyecto donde la investigación lo fue todo.',
+      tools: ['Figma', 'Illustrator', 'Photoshop'],
       figma: 'https://embed.figma.com/proto/9MgKA1tdqt16XQSb2pJkw2/Consul-Virtual?page-id=0%3A1&node-id=1-15&viewport=541%2C60%2C0.09&scaling=scale-down-width&content-scaling=fixed&embed-host=share'
     }
   };
