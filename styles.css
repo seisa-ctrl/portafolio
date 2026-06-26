@@ -1172,3 +1172,36 @@ body {
   .proj-right { justify-content: flex-start; padding: 0 4px 24px; }
   .proj-desc { max-width: none; }
 }
+
+@media (max-width: 600px) {
+  /* Bottom-sheet modal en mobile */
+  .proj-overlay {
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .proj-modal {
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    max-height: 88vh;
+    border-radius: 24px 24px 0 0;
+    gap: 0;
+    overflow-y: auto;
+    transform: translateY(40px);
+  }
+  .proj-overlay.open .proj-modal {
+    transform: translateY(0);
+  }
+  .proj-left {
+    flex: 0 0 240px;
+    min-height: 240px;
+    border-radius: 0;
+  }
+  .proj-right {
+    padding: 20px 20px 36px;
+    justify-content: flex-start;
+  }
+  .proj-title { font-size: 28px; margin-bottom: 10px; }
+  .proj-desc { font-size: 15px; }
+  .proj-close { top: 16px; right: 16px; }
+}
