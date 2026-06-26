@@ -522,7 +522,7 @@ window.addEventListener('scroll', () => {
       category: 'Diseño de Aplicativo',
       desc: 'Construí un aplicativo para gestionar el inventario de vehículos usados de Toyota, partiendo del programa Genera. Un sistema claro, funcional y pensado para quien lo va a usar día a día.',
       tools: ['Figma', 'Genera', 'ChatGPT'],
-      figma: 'https://embed.figma.com/proto/p7inAxN32OKR3Ky3lkpmpz/Toyota-Usados?node-id=1-3&viewport=403%2C134%2C0.06&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&embed-host=share'
+      figma: 'https://embed.figma.com/proto/p7inAxN32OKR3Ky3lkpmpz/Toyota-Usados?node-id=1-3&page-id=0%3A1&scaling=scale-down-width&content-scaling=fixed&embed-host=share'
     },
     'consul-virtual': {
       title: 'Consul Virtual',
