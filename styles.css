@@ -764,9 +764,10 @@ body {
   font-weight: 300;
   color: #1D1D1D;
   opacity: 0.5;
-  max-width: 300px;
+  max-width: 380px;
   line-height: 1.65;
   padding-bottom: 6px;
+  text-wrap: balance;
 }
 .playground__desc strong { font-weight: 700; opacity: 1; color: #1D1D1D; }
 
