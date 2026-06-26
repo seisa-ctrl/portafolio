@@ -3,14 +3,13 @@
   const hero = document.getElementById('hero');
 
   const IMAGES = [
-    'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&q=80',
-    'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=300&q=80',
-    'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=300&q=80',
-    'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=300&q=80',
-    'https://images.unsplash.com/photo-1545235617-9465d2a55698?w=300&q=80',
-    'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=300&q=80',
-    'https://images.unsplash.com/photo-1547658719-da2b51169166?w=300&q=80',
-    'https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=300&q=80',
+    'figuras del banner/Frame 1984078183.png',
+    'figuras del banner/Frame 1984078184.png',
+    'figuras del banner/Group 657324919.png',
+    'figuras del banner/Group 657324920.png',
+    'figuras del banner/Group 657324921.png',
+    'figuras del banner/Group 657324923.png',
+    'figuras del banner/Group 657324925.png',
   ];
 
   let imgIndex = 0;
@@ -41,8 +40,8 @@
       top:${y - h / 2}px;
       width:${w}px;
       height:${h}px;
-      object-fit:cover;
-      border-radius:12px;
+      object-fit:contain;
+      border-radius:0;
       pointer-events:none;
       z-index:0;
       opacity:0;
