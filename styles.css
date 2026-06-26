@@ -917,13 +917,42 @@ body {
 }
 
 @media (max-width: 600px) {
-  /* carousel mobile */
+  /* ── OVERFLOW GLOBAL — evita scroll horizontal ── */
+  html, body { overflow-x: hidden; }
+
+  /* ── HERO ── */
+  .hero { padding: 100px 24px 60px; }
+
+  /* ── WORK / CAROUSEL ── */
+  .work { padding: 60px 0; }
+  .work__header { padding: 0 24px; margin-bottom: 32px; }
+  .work__title { font-size: clamp(36px, 10vw, 48px); }
+  .work__desc { font-size: 16px; }
   .carousel__item { flex: 0 0 78vw; }
   .carousel__card { height: 280px; border-radius: 1.25rem; }
   .carousel__track { gap: 18px; }
   .carousel__viewport { padding: 16px 0; }
   .carousel__btn { width: 30px; height: 30px; }
   .carousel__controls { gap: 12px; margin-top: 4px; }
+
+  /* ── SOBRE MÍ ── */
+  .about { padding: 60px 20px 80px; }
+  .about__shape-blob { width: 140px; right: -10px; }
+  .about__shape-star { width: 140px; left: -35px; bottom: -40px; }
+
+  /* ── UX/UI DESIGN ── */
+  .webdesign { padding: 60px 20px; }
+  .webdesign__header { flex-direction: column; gap: 12px; align-items: flex-start; }
+  .webdesign__desc { max-width: 100%; }
+  .webdesign__row-title { font-size: clamp(20px, 6vw, 28px); }
+  .webdesign__row { padding: 16px 0; }
+
+  /* ── PLAYGROUND ── */
+  .playground { padding: 60px 20px; }
+  .playground__header { flex-direction: column; gap: 16px; align-items: flex-start; }
+  .playground__desc { max-width: 100%; }
+  .playground__cols { flex-wrap: wrap; }
+  .playground__col { flex: 0 0 calc(33.33% - 10px); }
 }
 
 /* ── CAROUSEL ACTIVE — CLICK HINT ── */

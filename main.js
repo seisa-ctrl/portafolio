@@ -253,7 +253,7 @@ sections.forEach(id => {
     });
   });
 
-  const GAP = 48;
+  function getGap() { return parseInt(getComputedStyle(track).gap) || 48; }
   let current   = total; // apunta al primer original
   let realIndex = 0;
   let busy      = false;
@@ -291,8 +291,8 @@ sections.forEach(id => {
   function posFor(idx) {
     const iW = itemWidth();
     const vp = track.parentElement.offsetWidth;
-    // offsetLeft del item idx = idx * (iW + GAP) porque no hay padding en el track
-    return idx * (iW + GAP) - (vp / 2 - iW / 2);
+    const gap = getGap();
+    return idx * (iW + gap) - (vp / 2 - iW / 2);
   }
 
   function setPos(animated) {
