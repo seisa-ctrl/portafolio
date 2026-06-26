@@ -1060,7 +1060,7 @@ body {
 }
 
 .proj-left {
-  flex: 0 0 66%;
+  flex: 0 0 58%;
   border-radius: 20px;
   overflow: hidden;
   background: #111;
@@ -1187,7 +1187,7 @@ body {
     flex-direction: column;
     width: calc(100vw - 32px);
     height: auto;
-    max-height: 84vh;
+    max-height: 92vh;
     border-radius: 20px;
     gap: 0;
     overflow-y: auto;
@@ -1197,8 +1197,8 @@ body {
     transform: translateY(0);
   }
   .proj-left {
-    flex: 0 0 360px;
-    min-height: 360px;
+    flex: 0 0 55vh;
+    min-height: 55vh;
     border-radius: 20px 20px 0 0;
   }
   .proj-right {
