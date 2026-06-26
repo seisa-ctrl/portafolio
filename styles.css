@@ -1174,34 +1174,39 @@ body {
 }
 
 @media (max-width: 600px) {
-  /* Bottom-sheet modal en mobile */
+  /* Tarjeta flotante centrada en mobile */
   .proj-overlay {
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
   }
   .proj-modal {
     flex-direction: column;
-    width: 100vw;
+    width: calc(100vw - 32px);
     height: auto;
-    max-height: 88vh;
-    border-radius: 24px 24px 0 0;
+    max-height: 84vh;
+    border-radius: 20px;
     gap: 0;
     overflow-y: auto;
-    transform: translateY(40px);
+    transform: translateY(24px);
   }
   .proj-overlay.open .proj-modal {
     transform: translateY(0);
   }
   .proj-left {
-    flex: 0 0 240px;
-    min-height: 240px;
-    border-radius: 0;
+    flex: 0 0 200px;
+    min-height: 200px;
+    border-radius: 20px 20px 0 0;
   }
   .proj-right {
-    padding: 20px 20px 36px;
+    padding: 16px 18px 24px;
     justify-content: flex-start;
+    gap: 8px;
   }
-  .proj-title { font-size: 28px; margin-bottom: 10px; }
-  .proj-desc { font-size: 15px; }
-  .proj-close { top: 16px; right: 16px; }
+  .proj-category { font-size: 10px; letter-spacing: 0.1em; }
+  .proj-title { font-size: 22px; margin-bottom: 6px; }
+  .proj-desc { font-size: 13px; line-height: 1.6; }
+  .proj-tools-label { font-size: 10px; }
+  .proj-tool { font-size: 11px; padding: 5px 12px; }
+  .proj-close { top: 12px; right: 12px; width: 32px; height: 32px; }
+  .proj-close svg { width: 14px; height: 14px; }
 }
